@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ojos Verdes Editorial</title>
+  <meta
+    name="description"
+    content="Ojos Verdes Editorial. Libros creados con cuidado, sensibilidad y propósito."
+  />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #f4f0e8;
+      --card: rgba(255, 255, 255, 0.78);
+      --border: rgba(93, 82, 64, 0.14);
+      --text: #1f1b17;
+      --muted: #6d6459;
+      --accent: #4f6a52;
+      --accent-soft: #dde6db;
+      --shadow: 0 18px 60px rgba(31, 27, 23, 0.08);
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(108, 138, 111, 0.12), transparent 32%),
+        radial-gradient(circle at bottom right, rgba(145, 126, 92, 0.10), transparent 28%),
+        linear-gradient(180deg, #f7f4ee 0%, var(--bg) 100%);
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 20px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 820px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 56px 48px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.35), transparent 35%),
+        linear-gradient(180deg, transparent, rgba(255,255,255,0.18));
+      pointer-events: none;
+    }
+
+    .inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 18px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.4rem, 5vw, 4.1rem);
+      line-height: 0.98;
+      font-weight: 500;
+      letter-spacing: -0.04em;
+    }
+
+    .tagline {
+      margin: 18px 0 0 0;
+      max-width: 680px;
+      font-size: clamp(1.1rem, 2vw, 1.35rem);
+      line-height: 1.5;
+      color: var(--muted);
+    }
+
+    .divider {
+      width: 76px;
+      height: 2px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--accent), rgba(79, 106, 82, 0.15));
+      margin: 34px 0 34px 0;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 34px;
+      align-items: start;
+    }
+
+    .text p {
+      margin: 0;
+      font-size: 1.08rem;
+      line-height: 1.85;
+      color: #2b2621;
+    }
+
+    .side {
+      padding: 22px 22px 20px;
+      border: 1px solid rgba(93, 82, 64, 0.12);
+      background: rgba(255, 255, 255, 0.55);
+      border-radius: 22px;
+    }
+
+    .side-label {
+      margin: 0 0 10px 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .email-text {
+      margin: 0 0 8px 0;
+      font-size: 0.98rem;
+      line-height: 1.7;
+      color: var(--muted);
+    }
+
+    .email {
+      display: inline-block;
+      margin-top: 2px;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 1.04rem;
+      line-height: 1.5;
+      word-break: break-word;
+      border-bottom: 1px solid rgba(79, 106, 82, 0.35);
+      padding-bottom: 2px;
+    }
+
+    .email:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    footer {
+      margin-top: 34px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(93, 82, 64, 0.12);
+      color: #7b7367;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 760px) {
+      .card {
+        padding: 36px 24px;
+        border-radius: 22px;
+      }
+
+      .content {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .tagline {
+        font-size: 1.05rem;
+      }
+
+      .text p,
+      .email {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <main class="card">
+      <div class="inner">
+        <div class="eyebrow">Editorial independiente</div>
+
+        <h1>Ojos Verdes<br>Editorial</h1>
+
+        <p class="tagline">
+          Libros creados con cuidado, sensibilidad y propósito.
+        </p>
+
+        <div class="divider"></div>
+
+        <section class="content">
+          <div class="text">
+            <p>
+              Ojos Verdes es un sello editorial independiente orientado a la
+              creación de libros cuidados, con sensibilidad estética y vocación
+              de aportar valor duradero.
+            </p>
+            <br>
+            <p>
+              Su línea editorial se inspira en el bienestar, la vida saludable,
+              el crecimiento personal y aquellas ideas que ayudan a vivir con
+              más conciencia, profundidad y belleza.
+            </p>
+          </div>
+
+          <aside class="side">
+            <p class="side-label">Contacto</p>
+            <p class="email-text">
+              Para consultas, propuestas o colaboraciones:
+            </p>
+            <a class="email" href="mailto:ojosverdeseditorial@gmail.com">
+              ojosverdeseditorial@gmail.com
+            </a>
+          </aside>
+        </section>
+
+        <footer>
+          Ojos Verdes Editorial
+        </footer>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
