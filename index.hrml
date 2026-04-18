@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Editorial Ojos Verdes</title>
+  <meta
+    name="description"
+    content="Editorial Ojos Verdes. Libros con mirada, sensibilidad y sentido."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <div class="shell">
+      <main class="card">
+        <div class="inner">
+
+          <section class="hero">
+            <div class="hero-logo">
+              <img src="images/logo-ojos-verdes.png" alt="Logo de Editorial Ojos Verdes" />
+            </div>
+
+            <h1>Editorial Ojos Verdes</h1>
+
+            <p class="claim">
+              Libros con mirada, sensibilidad y sentido.
+            </p>
+
+            <p class="intro">
+              Editorial Ojos Verdes es una editorial orientada a proyectos cuidados,
+              con sensibilidad estética y vocación de aportar valor real. Sus publicaciones
+              se inspiran en el bienestar, la vida saludable, el crecimiento personal y una
+              forma más consciente de mirar el mundo.
+            </p>
+          </section>
+
+          <div class="content">
+            <section class="section">
+              <p class="section-label">Nuestra mirada</p>
+              <h2>Una editorial flexible, sensible y consciente</h2>
+              <p>
+                En Editorial Ojos Verdes nos interesan los libros que acompañan, inspiran
+                y dejan poso. Obras que conectan con el bienestar, la sensibilidad, la salud,
+                la naturaleza, la infancia y una forma más humana de vivir.
+              </p>
+            </section>
+
+            <section class="section contact">
+              <p class="section-label">Contacto</p>
+              <h2>Escríbenos</h2>
+              <p>
+                Para consultas, propuestas o colaboraciones, puedes escribirnos a:
+              </p>
+              <a class="email" href="mailto:ojosverdeseditorial@gmail.com">
+                ojosverdeseditorial@gmail.com
+              </a>
+            </section>
+          </div>
+
+          <footer>
+            <div class="footer-logo">
+              <img src="images/logo-ojos-verdes.png" alt="Logo de Editorial Ojos Verdes" />
+            </div>
+            <div class="footer-text">Editorial Ojos Verdes</div>
+          </footer>
+
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
